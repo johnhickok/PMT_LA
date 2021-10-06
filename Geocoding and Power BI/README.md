@@ -1,4 +1,4 @@
-Please prepare your PC before showing up. The downloads may be extensive. Visit <b>Before We Begin</b>.
+The downloads may be extensive. Visit <b>Before We Begin</b> for a list of stuff you need to download and install.
 
 This will be a brief overview of some of the things I do at work. The short list is below:
 
