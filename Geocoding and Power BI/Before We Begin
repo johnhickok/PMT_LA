@@ -1,7 +1,0 @@
-Before we begin, you will need to install some software to your MS Windows PC.
-  * ArcGIS Pro - Esri lets you install for home use, if you authenticate via ArcGIS Online
-  * MS Power BI - The desktop is free; MS charges for its cloud for sharing.
-  * QGIS - Free and open source, visit <a href="https://qgis.org/en/site/">qgis.org</a>
-  * PostgreSQL - Free and open source, visit ,a href="https://www.postgresql.org/">postgresql.org</a>
-  * A good text editor (N++) is OK
-
