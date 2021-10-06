@@ -4,6 +4,7 @@ Before we begin, you will need to download data and install some software on you
   * <a href="https://powerbi.microsoft.com/en-us/downloads/">MS Power BI</a> The Desktop is free; MS charges for sharing your viz' in their cloud.
   * <a href="https://qgis.org/en/site/">QGIS</a> (free and open source)
   * <a href="https://www.postgresql.org/">PostgreSQL</a> (free and open source - Install <a href="https://postgis.net/install/">PostGIS</a> in addition to PostgreSQL.)
+  * <a href="https://www.pgadmin.org/">pgAdmin</a> A free and open source tool for talking to PostgreSQL.
   * A good text editor (<a href="https://notepad-plus-plus.org/">N++</a> is OK.)
   * <a href="https://www.7-zip.org/">7Zip</a> (free and open source)
   * CAMS Geocoder (visit <a href="https://lacounty.maps.arcgis.com/home/item.html?id=d134cbd2ac6a49fb97c4cd9da97080db#overview">here</a> to download the County's locator files.)
