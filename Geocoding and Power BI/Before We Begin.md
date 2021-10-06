@@ -1,4 +1,4 @@
-Before we begin, you will need to download data and install some software on your MS Windows PC.
+Before we begin, you will need to download data and install some software on your MS Windows PC:
 
   * ArcGIS Pro - Esri lets you use up to three simultaneous uses on a single named user account.
   * <a href="https://powerbi.microsoft.com/en-us/downloads/">MS Power BI</a> The Desktop is free; MS charges for sharing your viz' in their cloud.
