@@ -1,3 +1,5 @@
+Please prepare your PC before showing up. The downloads may be extensive. Visit <b>Before We Begin</b>.
+
 This will be a brief overview of some of the things I do at work. The short list is below:
 
 1. Load a simple, stylized layer as a vector tile layer into ArcGIS Online via ArcGIS Pro.
