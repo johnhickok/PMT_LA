@@ -6,6 +6,7 @@ select
 cams_points.ain,
 cams_points.number,
 cams_points.numsuffix,
+cams_points.predir,
 cams_points.streetname,
 cams_points.posttype,
 cams_points.zipcode,
