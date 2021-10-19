@@ -1,4 +1,6 @@
-create table c01 as
+--create table with cams_points not in the City of Los Angeles
+--drop table cams_plus;
+create table cams_plus as
 select
 cams_points.ain,
 cams_points.number,
