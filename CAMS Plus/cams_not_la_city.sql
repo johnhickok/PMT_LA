@@ -1,4 +1,5 @@
---create table with cams_points not in the City of Los Angeles
+--create table cams_plus (initial) from cams_points
+--where features are not in the City of Los Angeles
 --drop table cams_plus;
 create table cams_plus as
 select
