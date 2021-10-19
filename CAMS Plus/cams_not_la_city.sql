@@ -15,3 +15,4 @@ from city_boundaries
 join cams_points
 on st_intersects(city_boundaries.geom, cams_points.geom)
 where city_boundaries.city_name  not like 'Los Angeles';
+create index idx_cams_plus_geom on cams_plus using gist(geom);
