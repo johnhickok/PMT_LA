@@ -12,6 +12,7 @@ pcls.situszip,
 pcls.situsfulladdress,
 st_x(st_centroid(pcls.geom)) as centoid_x,
 st_y(st_centroid(pcls.geom)) as centoid_y,
+st_astext(st_centroid(pcls.geom)) as wkt,
 --fields used to test geocoding
 pcls.situsaddress as g_address,
 replace(pcls.situscity, ' CA', '') as g_city,
