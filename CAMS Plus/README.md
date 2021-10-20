@@ -1,4 +1,4 @@
-This repo fuses CAMS, L.A. City, and Assessor addresses into a single PostGIS table. It is assumed the user has ArcGIS Pro, PostgreSQL, PostGIS, pgAdmin4, and QGIS installed and has some proficiency in this software.
+This repo fuses CAMS, L.A. City, and Assessor addresses into a single PostGIS points table. It is assumed the user has ArcGIS Pro, PostgreSQL, PostGIS, pgAdmin4, and QGIS installed and has some proficiency in this software.
 
 You will need some data:
 
