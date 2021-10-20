@@ -1,5 +1,5 @@
---drop table geocode_test;
-create table geocode_test as
+--drop table parcels_no_cams_points;
+create table parcels_no_cams_points as
 select
 pcls.ain,
 pcls.situshouseno,
@@ -10,8 +10,6 @@ pcls.situsstreet,
 city_boundaries.city_name as geo_city,
 pcls.situszip,
 pcls.situsfulladdress,
-st_x(st_centroid(pcls.geom)) as centoid_x,
-st_y(st_centroid(pcls.geom)) as centoid_y,
 st_astext(st_centroid(pcls.geom)) as wkt,
 --fields used to test geocoding
 pcls.situsaddress as g_address,
