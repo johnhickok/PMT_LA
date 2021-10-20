@@ -16,7 +16,7 @@ Here are the steps:
   <li>Load CAMS Points, Parcels, City Boundaries, and L.A. City addresses into a PostgreSQL database.</li>
   <li>Run <b>cams_not_la_city.sql</b> to create a table cams_plus with all the CAMS address points outside the City of L.A.</li>
   <li>Run <b>load_addresses_lacity.sql</b> to add L.A. addresses into cams_plus.</li>
-  <li>Run <b>parcels_no_address_points.sql</b> to create a table parcels_no_cams_points from parcels with no CAMS points.</li>
+  <li>Run <b>parcels_no_address_points.sql</b> to create a table parcels_no_cams_points from parcels with no cams_plus points.</li>
   <li>Run <b>geocode_parcels.py</b>. Before running this script, create an sde file to let it connect to your PostgreSQL database and read parcels_no_cams_points as your input. Output is a new Esri file geodatabase feature class that you will need to upload into PostgreSQL.</li>
   <li>Run <b>load_parcel_addresses.sql</b> to load parcel addresses into cams_plus that didn't geocode.</li>
   <li>Dont forget to vacuum analyze.</li>
