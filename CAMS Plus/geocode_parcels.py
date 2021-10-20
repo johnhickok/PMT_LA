@@ -3,15 +3,14 @@
 import arcpy, os
 
 # Set your environment to the folder this is running in.
-
 this_folder = os.getcwd()
 arcpy.env.workspace = this_folder
 
-# Your script might create an empty shapefile
 # This env variable allows you to overwrite your results to it.
 arcpy.env.overwriteOutput = True
 
-in_table = 'parcels_geocode_test.csv'
+# copy records from pg table to a geopackage using qgis
+in_table = 'postgres_localhost.sde/laco_backup.public.parcels_no_cams_points'
 
 # your copy may be in a different folder
 address_locator = 'CAMS_POINTS.loc'
@@ -24,7 +23,6 @@ State g_state VISIBLE NONE;
 'ZIP Code' g_zip VISIBLE NONE
 """
 
-# Your folder location and output format may be different.
 # Using an Esri GDB avoids truncated field names
 arcpy.management.Delete('geocode_test.gdb')
 arcpy.CreateFileGDB_management(this_folder, 'geocode_test.gdb')
