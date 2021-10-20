@@ -1,4 +1,15 @@
---troubles with this script, probably non utf8 chars in the data
+insert into cams_plus (
+ain,
+number,
+numsuffix,
+predir,
+streetname,
+posttype,
+geo_city,
+zipcode,
+fulladdress,
+geom
+)
 select 
 user_ain,
 user_situshouseno,
@@ -9,6 +20,6 @@ user_posttype,
 user_geo_city,
 user_situszip,
 user_situsfulladdress,
-ST_GeometryFromText(WKT, 2229) as geom
-from public.parcel_geocode_results
+st_geometryfromtext(user_wkt, 2229) as geom
+from public.parcels_no_cams_geocoded
 where score = 0;
