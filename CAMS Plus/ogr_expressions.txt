@@ -1,0 +1,21 @@
+:: UPLOAD GIS DATA FROM THIS FOLDER TO POSTGRESQL
+:: Run this batch file in the OSGEO4W Shell
+
+::docs: 
+::https://gdal.org/programs/ogr2ogr.html
+::https://www.bostongis.com/PrinterFriendly.aspx?content_name=ogr_cheatsheet
+
+:: upload city boundaries
+ogr2ogr -lco GEOMETRY_NAME=geom -f "PostgreSQL" PG:"host=<your host> port=5432 dbname=<your database name> user=<your user name> password=<your password>" -s_srs EPSG:2229 -t_srs EPSG:2229 pcls.gdb -sql "SELECT * FROM city_boundaries" -overwrite -progress --config PG_USE_COPY YES -nlt MULTIPOLYGON
+
+:: upload parcels
+ogr2ogr -lco GEOMETRY_NAME=geom -f "PostgreSQL" PG:host=<your host> port=5432 dbname=<your database name> user=<your user name> password=<your password>" -s_srs EPSG:2229 -t_srs EPSG:2229 pcls.gdb -sql "SELECT * FROM parcels" -overwrite -progress --config PG_USE_COPY YES -nlt MULTIPOLYGON
+
+:: upload cams address points
+ogr2ogr -lco GEOMETRY_NAME=geom -f "PostgreSQL" PG:host=<your host> port=5432 dbname=<your database name> user=<your user name> password=<your password>" -s_srs EPSG:2229 -t_srs EPSG:2229 cams.gdb -sql "SELECT * FROM cams_points" -overwrite -progress --config PG_USE_COPY YES
+
+:: upload cams address lines
+ogr2ogr -lco GEOMETRY_NAME=geom -f "PostgreSQL" PG:"host=<your host> port=5432 dbname=<your database name> user=<your user name> password=<your password>" -s_srs EPSG:2229 -t_srs EPSG:2229 cams.gdb -sql "SELECT * FROM cams_lines" -overwrite -progress --config PG_USE_COPY YES
+
+::parcels warning when uploading to postgres - i ignore it and let it take its time.
+::Warning 1: organizePolygons() received a polygon with more than 100 parts. The processing may be really slow.  You can skip the processing by setting METHOD=SKIP, or only make it analyze counter-clock wise parts by setting METHOD=ONLY_CCW if you can assume that the outline of holes is counter-clock wise defined
