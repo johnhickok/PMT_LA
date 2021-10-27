@@ -23,4 +23,6 @@ Here are the steps:
 </ol>
 
 Other files in this repo:
-ogr_expressions.txt
+<ul>
+<li>ogr_expressions.txt - ogr2ogr statements used for loading file geodatabase layers into PostgreSQL<li>
+<ul>
