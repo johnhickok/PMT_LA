@@ -24,5 +24,5 @@ Here are the steps:
 
 Other files in this repo:
 <ul>
-<li>ogr_expressions.txt - ogr2ogr statements used for loading file geodatabase layers into PostgreSQL<li>
+<li>ogr_expressions.txt - ogr2ogr statements used for loading file geodatabase layers into PostgreSQL</li>
 <ul>
